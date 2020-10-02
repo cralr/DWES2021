@@ -1,0 +1,13 @@
+tr:nth-child(odd) {
+    background-color: #29b6f6;
+}
+
+table, th, td{
+    border: 1px solid black;
+};
+
+#ejercicio4 {
+    margin: 0;
+    border-spacing: 4px;
+}
+
