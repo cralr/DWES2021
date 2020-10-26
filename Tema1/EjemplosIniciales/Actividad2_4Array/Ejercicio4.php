@@ -7,7 +7,7 @@
 
 <?php
 
-    //Array de meses
+    //Array de verbos
 
     $arrayVerbos = array (
                               array(
@@ -397,6 +397,7 @@
                                     "participle"=>"written"),
 
     );
+
 ?>
 
 <!DOCTYPE html>

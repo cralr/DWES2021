@@ -6,396 +6,170 @@
 
 <?php
 
-    //Array de meses
+    /* 
+    do {$nAleatorio = rand (0,7)};
+    while (in_array ($nAleatorio))
+
+    */
+    //Array de Verbos
 
     $arrayVerbos = array (
-                              array(
-                                    "espanol" => "ser/estar", 
-                                    "present" => "be", 
-                                    "pastSimple" => "was/were", 
-                                    "participle" => "been"),
-                              array(
-                                    "espanol" => "ganarle", 
-                                    "present" => "beat", 
-                                    "pastSimple" => "beat", 
-                                    "participle" => "beaten"),
-                              array(
-                                    "espanol" => "empezar", 
-                                    "present" => "begin", 
-                                    "pastSimple" => "began", 
-                                    "participle" => "begun"),
-                              array(
-                                    "espanol" => "doblar", 
-                                    "present" => "bend", 
-                                    "pastSimple" => "bent", 
-                                    "participle" => "bent"),
-                              array(
-                                    "espanol" => "morder", 
-                                    "present" => "bite", 
-                                    "pastSimple" => "bit", 
-                                    "participle" => "bitten"),
-                              array(
-                                    "espanol" => "soplar", 
-                                    "present" => "blow", 
-                                    "pastSimple" => "blew", 
-                                    "participle" => "blown"),
-                              array(
-                                    "espanol" => "romper", 
-                                    "present" => "break", 
-                                    "pastSimple" => "broke", 
-                                    "participle" => "broken"),
-                              array(
-                                    "espanol" => "llevar/traer", 
-                                    "present" => "bring", 
-                                    "pastSimple" => "brought", 
-                                    "participle" => "brought"),
-                              array(
-                                    "espanol" => "contruir", 
-                                    "present" => "build", 
-                                    "pastSimple" => "built", 
-                                    "participle" => "built"),
-                              array(
-                                    "espanol" => "comprar", 
-                                    "present" => "buy", 
-                                    "pastSimple" => "bought", 
-                                    "participle" => "bought"),
-                              array(
-                                    "espanol" => "coger", 
-                                    "present" => "catch", 
-                                    "pastSimple" => "caught", 
-                                    "participle" => "caught"),
-                              array(
-                                    "espanol" => "elegir", 
-                                    "present" => "choose", 
-                                    "pastSimple" => "chose", 
-                                    "participle" => "chosen"),
-                              array(
-                                    "espanol" => "venir", 
-                                    "present" => "come", 
-                                    "pastSimple" => "came", 
-                                    "participle" => "come"),
-                              array(
-                                    "espanol" => "costar", 
-                                    "present" => "cost", 
-                                    "pastSimple" => "cost", 
-                                    "participle" => "cost"),
-                              array(
-                                    "espanol" => "hacer", 
-                                    "present" => "do", 
-                                    "pastSimple" => "did", 
-                                    "participle" => "done"),   
-                              array(
-                                    "espanol" => "dibujar", 
-                                    "present" => "draw", 
-                                    "pastSimple" => "drew", 
-                                    "participle" => "drawn"),
-                              array(
-                                    "espanol" => "soñar", 
-                                    "present" => "dream", 
-                                    "pastSimple" => "dreamed/dreamt", 
-                                    "participle" => "dreamed/dreamt"),
-                              array(
-                                    "espanol" => "conducir", 
-                                    "present" => "drive", 
-                                    "pastSimple" => "drove", 
-                                    "participle" => "driven"),
-                              array(
-                                    "espanol" => "beber", 
-                                    "present" => "drink", 
-                                    "pastSimple" => "drank", 
-                                    "participle" => "drunk"),
-                              array(
-                                    "espanol" => "comer", 
-                                    "present" => "eat", 
-                                    "pastSimple" => "ate", 
-                                    "participle" => "eaten"),
-                              array(
-                                    "espanol" => "caer", 
-                                    "present" => "fall", 
-                                    "pastSimple" => "fell", 
-                                    "participle" => "fallen"),
-                              array(
-                                    "espanol" => "sentir", 
-                                    "present" => "feel", 
-                                    "pastSimple" => "felt", 
-                                    "participle" => "felt"),
-                              array(
-                                    "espanol" => "luchar", 
-                                    "present" => "fight", 
-                                    "pastSimple" => "fought", 
-                                    "participle" => "fought"),
-                              array(
-                                    "espanol" => "encontrar", 
-                                    "present" => "find", 
-                                    "pastSimple" => "found", 
-                                    "participle" => "found"),
-                              array(
-                                    "espanol" => "volar", 
-                                    "present" => "fly", 
-                                    "pastSimple" => "flew", 
-                                    "participle" => "flown"),
-                              array(
-                                    "espanol" => "olvidar", 
-                                    "present" => "forget", 
-                                    "pastSimple" => "forgot", 
-                                    "participle" => "forgotten"),
-                              array(
-                                    "espanol" => "perdonar", 
-                                    "present" => "forgive", 
-                                    "pastSimple" => "forgave", 
-                                    "participle" => "forgiven"),
-                              array(
-                                    "espanol" => "conseguir", 
-                                    "present" => "get", 
-                                    "pastSimple" => "got", 
-                                    "participle" => "gotten"),
-                              array(
-                                    "espanol" => "dar", 
-                                    "present" => "give", 
-                                    "pastSimple" => "gave", 
-                                    "participle" => "fiven"),
-                              array(
-                                    "espanol" => "ir", 
-                                    "present" => "go", 
-                                    "pastSimple" => "went", 
-                                    "participle" => "gone"),
-                              array(
-                                    "espanol" => "crecer", 
-                                    "present" => "grow", 
-                                    "pastSimple" => "grew", 
-                                    "participle" => "grown"),
-                              array(
-                                    "espanol" => "tener", 
-                                    "present" => "have", 
-                                    "pastSimple" => "had", 
-                                    "participle" => "had"),
-                              array(
-                                    "espanol" => "oir", 
-                                    "present" => "hear", 
-                                    "pastSimple" => "heard", 
-                                    "participle" => "heard"),
-                                    
-                              array("espanol"=> "esconder",
-                                  "present"=>"hide",
-                                  "pastSimple" =>"hid",     
-                                  "participle"=>"hidden"),
+                              array("ser/estar",  "be",  "was/were",  "been"),
 
-                              array("espanol"=> "golpear",
-                                  "present"=>"hit",
-                                  "pastSimple" =>"hit",     
-                                  "participle"=>"hit"),
+                              array("ganarle",  "beat",  "beat",  "beaten"),
 
-                              array("espanol"=> "sujetar",
-                                  "present"=>"hold",
-                                  "pastSimple" =>"held",     
-                                  "participle"=>"held"),
+                              array("empezar",  "begin",  "began",  "begun"),
 
-                              array("espanol"=> "doler / hacer daño",
-                                  "present"=>"hurt",
-                                  "pastSimple" =>"hurt",     
-                                  "participle"=>"hurt"),
+                              array("doblar",  "bend",  "bent",  "bent"),
 
-                              array("espanol"=> "guardar",
-                                  "present"=>"keep",
-                                  "pastSimple" =>"kept",     
-                                  "participle"=>"kept"),
+                              array("morder",  "bite",  "bit",  "bitten"),
 
-                              array("espanol"=> "saber",
-                                  "present"=>"know",
-                                  "pastSimple" =>"knew",     
-                                  "participle"=>"known"),
+                              array("soplar",  "blow",  "blew",  "blown"),
 
-                              array("espanol"=> "aprender",
-                                  "present"=>"learn",
-                                  "pastSimple" =>"learned,learnt",     
-                                  "participle"=>"learned,learnt"),
+                              array("romper",  "break",  "broke",  "broken"),
 
-                              array("espanol"=> "marcharse",
-                                  "present"=>"leave",
-                                  "pastSimple" =>"left",     
-                                  "participle"=>"left"),
+                              array("llevar/traer",  "bring",  "brought",  "brought"),
 
-                              array("espanol"=> "prestar",
-                                  "present"=>"lend",
-                                  "pastSimple" =>"lent",     
-                                  "participle"=>"lent"),
+                              array("contruir",  "build",  "built",  "built"),
 
-                              array("espanol"=> "permitir",
-                                  "present"=>"let",
-                                  "pastSimple" =>"let",     
-                                  "participle"=>"let"),
+                              array("comprar",  "buy",  "bought",  "bought"),
 
-                              array("espanol"=> "perder",
-                                  "present"=>"lose",
-                                  "pastSimple" =>"lost",     
-                                  "participle"=>"lost"),
+                              array("coger",  "catch",  "caught",  "caught"),
 
-                              array("espanol"=> "hacer",
-                                  "present"=>"make",
-                                  "pastSimple" =>"made",     
-                                  "participle"=>"made"),
+                              array("elegir",  "choose",  "chose",  "chosen"),
 
-                              array("espanol"=> "significar",
-                                    "present"=>"mean",
-                                    "pastSimple" =>"meant",     
-                                    "participle"=>"meant"),
+                              array("venir",  "come",  "came",  "come"),
 
-                              array("espanol"=> "quedar",
-                                    "present"=>"meet",
-                                    "pastSimple" =>"met",     
-                                    "participle"=>"met"),
+                              array("costar",  "cost",  "cost",  "cost"),
 
-                              array("espanol"=> "pagar",
-                                    "present"=>"pay",
-                                    "pastSimple" =>"paid",     
-                                    "participle"=>"paid"),
+                              array("hacer",  "do",  "did",  "done"),
 
-                              array("espanol"=> "poner",
-                                    "present"=>"put",
-                                    "pastSimple" =>"put",     
-                                    "participle"=>"put"),
+                              array("dibujar",  "draw",  "drew",  "drawn"),
 
-                              array("espanol"=> "leer",
-                                    "present"=>"read",
-                                    "pastSimple" =>"read",     
-                                    "participle"=>"read"),
+                              array("soñar",  "dream",  "dreamed/dreamt",  "dreamed/dreamt"),
 
-                              array("espanol"=> "sonar",
-                                    "present"=>"ring",
-                                    "pastSimple" =>"rang",     
-                                    "participle"=>"rung"),
+                              array("conducir",  "drive",  "drove",  "driven"),
 
-                              array("espanol"=> "levantar",
-                                    "present"=>"rise",
-                                    "pastSimple" =>"rose",     
-                                    "participle"=>"risen"),
+                              array("beber",  "drink",  "drank",  "drunk"),
 
-                              array("espanol"=> "correr",
-                                    "present"=>"run",
-                                    "pastSimple" =>"ran",     
-                                    "participle"=>"run"),
+                              array("comer",  "eat",  "ate",  "eaten"),
 
-                              array("espanol"=> "decir",
-                                    "present"=>"say",
-                                    "pastSimple" =>"said",     
-                                    "participle"=>"said"),
-                                    
-                              array("espanol"=> "ver",
-                                    "present"=>"see",
-                                    "pastSimple" =>"saw",     
-                                    "participle"=>"seen"),
+                              array("caer",  "fall",  "fell",  "fallen"),
 
-                              array("espanol"=> "vender",
-                                    "present"=>"sell",
-                                    "pastSimple" =>"sold",     
-                                    "participle"=>"sold"),
+                              array("sentir",  "feel",  "felt",  "felt"),
 
-                              array("espanol"=> "enviar",
-                                    "present"=>"send",
-                                    "pastSimple" =>"sent",     
-                                    "participle"=>"sent"),
+                              array("luchar",  "fight",  "fought",  "fought"),
 
-                              array("espanol"=> "mostrar",
-                                    "present"=>"show",
-                                    "pastSimple" =>"showed",     
-                                    "participle"=>"showed/ shown"),
+                              array("encontrar",  "find",  "found",  "found"),
 
-                              array("espanol"=> "enviar",
-                                    "present"=>"send",
-                                    "pastSimple" =>"sent",     
-                                    "participle"=>"sent"),
+                              array("volar",  "fly",  "flew",  "flown"),
 
-                              array("espanol"=> "cerrar",
-                                    "present"=>"shut",
-                                    "pastSimple" =>"shut",     
-                                    "participle"=>"shut"),
+                              array("olvidar",  "forget",  "forgot",  "forgotten"),
 
-                              array("espanol"=> "cantar",
-                                    "present"=>"sing",
-                                    "pastSimple" =>"sang",     
-                                    "participle"=>"sung"),
+                              array("perdonar",  "forgive",  "forgave",  "forgiven"),
 
-                              array("espanol"=> "sentarse",
-                                    "present"=>"sit",
-                                    "pastSimple" =>"sat",     
-                                    "participle"=>"sat"),
+                              array("conseguir",  "get",  "got",  "gotten"),
 
-                              array("espanol"=> "dormir",
-                                    "present"=>"sleep",
-                                    "pastSimple" =>"told",     
-                                    "participle"=>"told"),
+                              array("dar",  "give",  "gave",  "fiven"),
 
-                              array("espanol"=> "hablar",
-                                    "present"=>"speak",
-                                    "pastSimple" =>"spoke",     
-                                    "participle"=>"spoken"),
+                              array("ir",  "go",  "went",  "gone"),
 
-                              array("espanol"=> "gastar",
-                                    "present"=>"spend",
-                                    "pastSimple" =>"spent",     
-                                    "participle"=>"spent"),
+                              array("crecer",  "grow",  "grew",  "grown"),
 
-                              array("espanol"=> "estar de pie",
-                                    "present"=>"stand",
-                                    "pastSimple" =>"stood",     
-                                    "participle"=>"stood"),
+                              array("tener",  "have",  "had",  "had"),
 
-                              array("espanol"=> "nadar",
-                                    "present"=>"swim",
-                                    "pastSimple" =>"swam",     
-                                    "participle"=>"swum"),
+                              array("oir",  "hear",  "heard",  "heard"),
 
-                              array("espanol"=> "tomar",
-                                    "present"=>"take",
-                                    "pastSimple" =>"took",     
-                                    "participle"=>"taken"),
+                              array( "esconder","hide","hid",     "hidden"),
 
-                              array("espanol"=> "enseñar",
-                                    "present"=>"teach",
-                                    "pastSimple" =>"taught",     
-                                    "participle"=>"taught"),
+                              array( "golpear","hit","hit","hit"),
 
-                              array("espanol"=> "contar/ decir algo a alguien",
-                                    "present"=>"tell",
-                                    "pastSimple" =>"told",     
-                                    "participle"=>"told"),
+                              array( "sujetar","hold","held","held"),
 
-                              array("espanol"=> "pensar",
-                                    "present"=>"think",
-                                    "pastSimple" =>"thought",     
-                                    "participle"=>"thought"),
+                              array( "doler / hacer daño","hurt","hurt","hurt"),
 
-                              array("espanol"=> "lanzar, arrojar",
-                                    "present"=>"throw",
-                                    "pastSimple" =>"threw",     
-                                    "participle"=>"thrown"),
+                              array( "guardar","keep","kept","kept"),
 
-                              array("espanol"=> "entender",
-                                    "present"=>"understand",
-                                    "pastSimple" =>"understood",     
-                                    "participle"=>"understood"),
+                              array( "saber","know","knew","known"),
 
-                              array("espanol"=> "despertar",
-                                    "present"=>"wake",
-                                    "pastSimple" =>"woke",     
-                                    "participle"=>"woken"),
+                              array( "aprender","learn","learned,learnt","learned,learnt"),
 
-                              array("espanol"=> "llevar puesto, ponerse",
-                                    "present"=>"wear",
-                                    "pastSimple" =>"wore",     
-                                    "participle"=>"worn"),
+                              array( "marcharse","leave","left","left"),
 
-                              array("espanol"=> "ganar",
-                                    "present"=>"win",
-                                    "pastSimple" =>"won",     
-                                    "participle"=>"won"),
+                              array( "prestar","lend","lent","lent"),
 
-                              array("espanol"=> "escribir",
-                                    "present"=>"write",
-                                    "pastSimple" =>"wrote",     
-                                    "participle"=>"written"),
+                              array( "permitir","let","let","let"),
 
-    );
+                              array( "perder","lose","lost","lost"),
+
+                              array( "hacer","make","made", "made"),
+
+                              array( "significar","mean","meant","meant"),
+
+                              array( "quedar","meet","met","met"),
+
+                              array( "pagar","pay","paid","paid"),
+
+                              array( "poner","put","put","put"),
+
+                              array( "leer","read","read","read"),
+
+                              array( "sonar","ring","rang","rung"),
+
+                              array( "levantar","rise","rose","risen"),
+
+                              array( "correr","run","ran","run"),
+
+                              array( "decir","say","said","said"),
+
+                              array( "ver","see","saw","seen"),
+
+                              array( "vender","sell","sold","sold"),
+
+                              array( "enviar","send","sent","sent"),
+
+                              array( "mostrar","show","showed","showed/ shown"),
+
+                              array( "enviar","send","sent","sent"),
+
+                              array( "cerrar","shut","shut","shut"),
+
+                              array( "cantar","sing","sang","sung"),
+
+                              array( "sentarse","sit","sat","sat"),
+
+                              array( "dormir","sleep","told","told"),
+
+                              array( "hablar","speak","spoke","spoken"),
+
+                              array( "gastar","spend","spent","spent"),
+
+                              array( "estar de pie","stand","stood","stood"),
+
+                              array( "nadar","swim","swam","swum"),
+
+                              array( "tomar","take","took","taken"),
+
+                              array( "enseñar","teach","taught","taught"),
+
+                              array( "contar/ decir algo a alguien","tell","told","told"),
+
+                              array( "pensar","think","thought","thought"),
+
+                              array( "lanzar, arrojar","throw","threw","thrown"),
+
+                              array( "entender","understand","understood","understood"),
+
+                              array( "despertar","wake","woke", "woken"),
+
+                              array( "llevar puesto/ ponerse","wear","wore","worn"),
+
+                              array( "ganar","win","won","won"),
+
+                              array( "escribir","write","wrote","written"),
+
+    );      
+
 ?>
 
 <!DOCTYPE html>
@@ -409,22 +183,51 @@
 </head>
 <body>
     <header>
-        <h1>Ejercicio 5: Test Verbos Irregulares en Ingles.</h1>
     </header>
     <section>
         <?php
-            echo "<table border=1>";
-            echo "<tr><th>Español</th><th>Presente</th><th>Pasado</th><th>Participio</th></tr>";
+            
+            echo "<h1>Ejercicio 5: Test Verbos Irregulares</h1>";
+            echo "<form action=\"Ejercicio5.php\" method=\"post\">";
+            echo "<br/><br/>";  
+                echo "<label><p>Número de Verbos: </p><input type=\"number\" name=\"num_verbos\" value=\"\" min=\"1\" max=\"77\"></input></label></br>";
+                echo "<label >
+                        <p>Dificultad:</p>
+                            <select multiple name=\"dificultad[]\">
+                                <option value=\"Basico\">Básico</option>
+                                <option value=\"Medio\" >Medio</option>
+                                <option value=\"Dificil\">Dificil</option>
+                            </select>
+                    </label>";
 
-            foreach($arrayVerbos as $valorVerbos){
-                echo "<td>".$valorVerbos["espanol"]."</td>";
-                echo "<td>".$valorVerbos["present"]."</td>";
-                echo "<td>".$valorVerbos["pastSimple"]."</td>";
-                echo "<td>".$valorVerbos["participle"]."</td>";
-                echo "<tr></tr>";
+                echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"enviar\"></button>";
+            echo "</form>";
+
+            if(isset($_POST["enviar"])){
+                echo "<table border=1>";
+                echo "<tr><th>Español</th><th>Presente</th><th>Pasado</th><th>Participio</th></tr>";
+                    if($_POST["dificultad"][0]=="Basico"){
+                        echo "<form action=\"Ejercicio5.php\" method=\"post\">";
+                        echo "<br/><br/>";  
+                            echo "<label><p>Número de Verbos: </p><input type=\"number\" name=\"num_verbos\" value=\"\" min=\"1\" max=\"77\"></input></label></br>";
+                            echo "<label >
+                                    <p>Dificultad:</p>
+                                        <select multiple name=\"dificultad[]\">
+                                            <option value=\"Basico\">Básico</option>
+                                            <option value=\"Medio\" >Medio</option>
+                                            <option value=\"Dificil\">Dificil</option>
+                                        </select>
+                                </label>";
+
+                            echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"enviar\"></button>";
+                        echo "</form>";
+                    }
+                echo "</table>";    
             }
-            echo "</table>";                   
+                
+            
         ?>
     </section>  
 </body>
 </html>
+
