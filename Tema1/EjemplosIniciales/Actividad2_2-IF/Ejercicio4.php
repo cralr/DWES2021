@@ -76,6 +76,7 @@
 
     echo "Estamos en ".$estacion;
     echo "<img src=\"$directorio\" style='width: 750px; height: 450px; margin: 10px auto; display: block'>"; 
+    echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
     ?>
 </section>  
 </body>

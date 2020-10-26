@@ -47,6 +47,7 @@
                 }
                 echo "La suma de los números introducidos es: ".$suma;
             }
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

@@ -38,6 +38,8 @@
                 else    
                     echo "$mes de $anyo no es bisiesto y tiene 28 día.";
             }
+
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

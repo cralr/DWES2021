@@ -23,6 +23,7 @@
             for ($i=1; $i < 11; $i++) { 
                 echo $i.' ';
             }
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

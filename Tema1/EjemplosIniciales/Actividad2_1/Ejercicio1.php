@@ -25,6 +25,8 @@
     <?php
         echo "Soy " .$nombre.' '.$Apellidos. " y tengo ".$edad." años."; 
         echo "<p><img src=\"".$img."\" width=\"200px\" height=\"200px\"></p>";
+
+        echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
     ?>
 </body>
 </html>

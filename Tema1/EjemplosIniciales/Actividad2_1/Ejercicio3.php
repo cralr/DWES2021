@@ -24,6 +24,7 @@
     <section>
         <?php
             echo "La suma entre ".$num1." y ".$num2." es: ".$suma;  
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>
 </body>

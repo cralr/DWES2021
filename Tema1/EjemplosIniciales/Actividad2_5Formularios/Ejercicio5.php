@@ -225,7 +225,7 @@
                 echo "</table>";    
             }
                 
-            
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

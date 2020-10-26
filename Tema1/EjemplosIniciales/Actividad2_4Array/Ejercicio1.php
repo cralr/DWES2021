@@ -34,7 +34,7 @@
                 $meses += 1;
                 echo "Mes ".$meses." es ".$mes."</br>";
             }
-                    
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";       
         ?>
     </section>  
 </body>

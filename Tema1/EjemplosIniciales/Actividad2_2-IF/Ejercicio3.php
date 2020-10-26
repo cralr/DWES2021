@@ -35,6 +35,7 @@
             $edad=($annoA-$annoN);
 
             echo "Mi fecha de nacimiento es: ".$diaN."-".$mesN."-".$annoN." y tengo ".$edad." años.";
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

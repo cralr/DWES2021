@@ -40,6 +40,7 @@
             echo "<p>La multiplicación entre ".$x." y ".$y." es: ".$mult."</p>"; 
             echo "<p>La división entre ".$x." y ".$y." es: ".$division."</p>"; 
             echo "<p>El módulo entre ".$x." y ".$y." es: ".$modulo."</p>"; 
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

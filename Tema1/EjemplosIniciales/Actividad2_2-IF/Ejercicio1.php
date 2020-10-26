@@ -31,6 +31,8 @@
                 echo $num2." es mayor que ".$num1;
             else 
                 echo $num1." y ".$num2." son iguales";
+
+                echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

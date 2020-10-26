@@ -41,6 +41,8 @@
                 <h2>El perfil no es correcto</h2>
                 <?php
             }
+
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

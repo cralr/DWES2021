@@ -23,6 +23,7 @@
     <section>
         <?php
             echo "El radio del círculo es ".$radio." y el valor de su área es: ".$area;  
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>
 </body>

@@ -33,7 +33,7 @@
             var_dump($num);
             echo "<p></p>";
             var_dump($x);
-           
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

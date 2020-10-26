@@ -35,6 +35,7 @@
             echo "<p>Valor es: ".gettype($verdad)."</p>";
             echo "<p>Valor es: ".gettype($num)."</p>";
             echo "<p>Valor es: ".gettype($nulo)."</p>";
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

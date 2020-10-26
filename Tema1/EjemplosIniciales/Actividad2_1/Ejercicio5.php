@@ -41,6 +41,7 @@
             echo "<p>Divide por 3. Valor ahora es ".$dividir."</p>"; 
             echo "<p>Incrementa el valor en 1. Valor ahora es ".$incremento."</p>"; 
             echo "<p>Decrementa el valor en 1. Valor ahora es ".$decremento."</p>";
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>
