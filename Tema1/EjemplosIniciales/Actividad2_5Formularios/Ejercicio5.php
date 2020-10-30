@@ -186,46 +186,43 @@
     </header>
     <section>
         <?php
-            
-            echo "<h1>Ejercicio 5: Test Verbos Irregulares</h1>";
-            echo "<form action=\"Ejercicio5.php\" method=\"post\">";
-            echo "<br/><br/>";  
-                echo "<label><p>Número de Verbos: </p><input type=\"number\" name=\"num_verbos\" value=\"\" min=\"1\" max=\"77\"></input></label></br>";
-                echo "<label >
-                        <p>Dificultad:</p>
-                            <select multiple name=\"dificultad[]\">
-                                <option value=\"Basico\">Básico</option>
-                                <option value=\"Medio\" >Medio</option>
-                                <option value=\"Dificil\">Dificil</option>
-                            </select>
-                    </label>";
-
-                echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"enviar\"></button>";
-            echo "</form>";
-
             if(isset($_POST["enviar"])){
+                $numeroVerbos = $_POST["num_verbos"];
                 echo "<table border=1>";
                 echo "<tr><th>Español</th><th>Presente</th><th>Pasado</th><th>Participio</th></tr>";
                     if($_POST["dificultad"][0]=="Basico"){
-                        echo "<form action=\"Ejercicio5.php\" method=\"post\">";
-                        echo "<br/><br/>";  
-                            echo "<label><p>Número de Verbos: </p><input type=\"number\" name=\"num_verbos\" value=\"\" min=\"1\" max=\"77\"></input></label></br>";
-                            echo "<label >
-                                    <p>Dificultad:</p>
-                                        <select multiple name=\"dificultad[]\">
-                                            <option value=\"Basico\">Básico</option>
-                                            <option value=\"Medio\" >Medio</option>
-                                            <option value=\"Dificil\">Dificil</option>
-                                        </select>
-                                </label>";
-
-                            echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"enviar\"></button>";
-                        echo "</form>";
+                        
+                        
+                    }
+                    else if($_POST["dificultad"][0]=="Medio"){
+                        echo "Medio";
+                    }
+                    else if($_POST["dificultad"][0]=="Dificil"){
+                        echo "Dificil";
                     }
                 echo "</table>";    
             }
+            else{
+                echo "<h1>Ejercicio 5: Test Verbos Irregulares</h1>";
+                echo "<form action=\"Ejercicio5.php\" method=\"post\">";
+                echo "<br/><br/>";  
+                    echo "<label><p>Número de Verbos: </p><input type=\"number\" name=\"num_verbos\" value=\"\" min=\"1\" max=\"77\"></input></label></br>";
+                    echo "<label >
+                            <p>Dificultad:</p>
+                                <select multiple name=\"dificultad[]\">
+                                    <option value=\"Basico\">Básico</option>
+                                    <option value=\"Medio\" >Medio</option>
+                                    <option value=\"Dificil\">Dificil</option>
+                                </select>
+                        </label>";
+
+                    echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"enviar\"></button>";
+                    
+                echo "</form>";
+                echo "</br><a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+            }
                 
-            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+            
         ?>
     </section>  
 </body>

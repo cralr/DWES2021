@@ -20,7 +20,7 @@
         $arrayLetras = array("T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N","J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E", "T");
         $stringLetras=implode("", $arrayLetras);
         $letraCalculada = substr($stringLetras,$num%23,1);
-
+        
         return $letraCalculada;
      }
 ?>
@@ -40,14 +40,14 @@
         <?php
            
             if(isset( $_GET["dni"])){
-                echo "<p>La letra de su DNI es: </p>";
-                echo obtenerLetraDni($_GET["dni"]);
+                echo "<h1>Letra DNI</h1>";
+                echo "<p>La letra de su DNI es la: ".obtenerLetraDni($_GET["dni"])."</p>";
             }
             else{
                 echo "<h1>Letra DNI</h1>";
                 echo "<form action=\"Ejercicio1.php\" method=\"get\">";
                     echo "<p>Introduzca el número de su dni para ver su letra.</p>";
-                    echo "<label><p>Número de Dni: </p><input type=\"number\" name=\"dni\" value=\"\"></input></label></br>";
+                    echo "<label><p>Número de Dni: </p><input type=\"number\" name=\"dni\" value=\"\" required></input></label></br>";
                     echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"\"></button>";
                 echo "</form>";
                 
