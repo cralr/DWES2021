@@ -56,6 +56,8 @@
             }
             echo "</table>";
             echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+            echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema1/EjemplosIniciales/Actividad2_4Array/Ejercicio5.php\"><button>Ver Código</button></a></br>";
+
         ?>
     </section>  
 </body>

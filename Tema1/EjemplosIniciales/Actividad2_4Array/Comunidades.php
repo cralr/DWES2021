@@ -127,8 +127,11 @@
                 else
                     echo "<p class='verde'><b>".$valor["comunidad"]." tiene un total de ".$totalCasos." casos por COVID-19</b></p>"; 
                 $totalCasos=0;
-            }        
+            }     
+            echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema1/EjemplosIniciales/Actividad2_4Array/Comunidades.php\"><button>Ver Código</button></a></br>";
+   
         ?>
+        
     </section>  
 </body>
 </html>

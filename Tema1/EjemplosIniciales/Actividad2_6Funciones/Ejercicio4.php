@@ -30,6 +30,8 @@
             if(isset( $_GET["digitos"])){
                 echo "<h1>Suma Dígitos de un números</h1>";
                 echo "<p>La suma de los dígitos es: ".sumaDigitos($_GET["digitos"])."</p>";
+                echo "</br><a href=\"./Ejercicio4.php\"><button>Volver</button></a>";
+
             }
             else{
                 echo "<h1>Suma Dígitos de un números</h1>";
@@ -38,10 +40,11 @@
                     echo "<label><p>Número: </p><input type=\"number\" name=\"digitos\" value=\"\" required></input></label></br>";
                     echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"\"></button>";
                 echo "</form>";
-                
+                echo "</br><a href=\"../../../index.php?page=dwes\"><button>Volver</button></a></br>";
+                echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema1/EjemplosIniciales/Actividad2_6Funciones/Ejercicio4.php\"><button>Ver Código</button></a></br>";
+
             }
 
-            echo "</br><a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  
 </body>

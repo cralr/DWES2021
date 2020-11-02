@@ -33,6 +33,8 @@
                 echo $num1." y ".$num2." son iguales";
 
                 echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+                echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema1/EjemplosIniciales/Actividad2_2-IF/Ejercicio1.php\"><button>Ver Código</button></a></br>";
+
         ?>
     </section>  
 </body>

@@ -24,6 +24,7 @@
         <?php
             echo "El radio del círculo es ".$radio." y el valor de su área es: ".$area;  
             echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+            echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema1/EjemplosIniciales/Actividad2_1/Ejercicio2.php\"><button>Ver Código</button></a></br>";
         ?>
     </section>
 </body>

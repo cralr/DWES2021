@@ -35,7 +35,9 @@
             echo "<p>Valor es: ".gettype($verdad)."</p>";
             echo "<p>Valor es: ".gettype($num)."</p>";
             echo "<p>Valor es: ".gettype($nulo)."</p>";
-            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";          
+            echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema1/EjemplosIniciales/Actividad2_1/Ejercicio7.php\"><button>Ver Código</button></a></br>";
+
         ?>
     </section>  
 </body>

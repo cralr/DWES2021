@@ -77,6 +77,8 @@
     echo "Estamos en ".$estacion;
     echo "<img src=\"$directorio\" style='width: 750px; height: 450px; margin: 10px auto; display: block'>"; 
     echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+    echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema1/EjemplosIniciales/Actividad2_2-IF/Ejercicio4.php\"><button>Ver Código</button></a></br>";
+
     ?>
 </section>  
 </body>
