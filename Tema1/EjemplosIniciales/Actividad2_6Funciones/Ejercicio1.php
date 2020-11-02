@@ -42,6 +42,7 @@
             if(isset( $_GET["dni"])){
                 echo "<h1>Letra DNI</h1>";
                 echo "<p>La letra de su DNI es la: ".obtenerLetraDni($_GET["dni"])."</p>";
+                echo "<a href=\"./Ejercicio1.php\"><button>Volver</button></a>";
             }
             else{
                 echo "<h1>Letra DNI</h1>";
@@ -50,10 +51,10 @@
                     echo "<label><p>Número de Dni: </p><input type=\"number\" name=\"dni\" value=\"\" required></input></label></br>";
                     echo "</br></br><input type=\"submit\" value=\"Enviar\" name=\"\"></button>";
                 echo "</form>";
-                
+                echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
             }
             
-            echo "<a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
+            
             
            
            

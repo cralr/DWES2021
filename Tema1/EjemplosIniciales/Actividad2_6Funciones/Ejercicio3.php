@@ -45,11 +45,16 @@
      * Función anónima que genera los usuarios a partir de un array de nombres y apellidos.
      */
 
-    $usuarios = function($aUsuarios){
+   /*  $usuarios = function($aUsuarios){
         foreach($aUsuarios as $claveUsuarios => $valorUsuarios){        
             echo substr(normaliza(strtolower($valorUsuarios["apellido1"])),0,2).substr(normaliza(strtolower($valorUsuarios["apellido2"])),0,2).substr(normaliza(strtolower($valorUsuarios["nombre"])),0,2)."</br>";
             }
-    }
+    } */
+
+    //Usando array_map
+    $usuarios = array_map(function($user){
+        return substr(normaliza(strtolower($user["apellido1"])),0,2).substr(normaliza(strtolower($user["apellido2"])),0,2).substr(normaliza(strtolower($user["nombre"])),0,2)."</br>";
+    },$aUsuarios);
 
 ?>
 
@@ -68,8 +73,11 @@
         <?php
     
             echo "<h1>Nombres de usuarios</h1>";
-            echo "Los usuarios obtenidos son: </br>";
-            $usuarios($aUsuarios);
+            echo "Los usuarios obtenidos son: </br></br>";
+            foreach($usuarios as $valorUsuarios){
+                echo $valorUsuarios;
+                
+            }
             echo "</br><a href=\"../../../index.php?page=dwes\"><button>Volver</button></a>";
         ?>
     </section>  

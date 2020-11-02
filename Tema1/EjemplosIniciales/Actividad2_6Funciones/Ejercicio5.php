@@ -1,5 +1,5 @@
 
-<!-- Ejercicio 4¡5 Funciones.
+<!-- Ejercicio 5 Funciones.
     5. Escribir un script que muestre una lista de enlaces. 
     Los enlaces serán creados por una función que recibirá como como parámetro un array con las opciones necesarias.
 -->
