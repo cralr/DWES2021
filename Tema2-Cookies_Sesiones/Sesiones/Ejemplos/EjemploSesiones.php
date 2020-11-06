@@ -41,9 +41,9 @@
         header("Location:EjemploSesiones.php");
     } 
 
-    if(isset($_POST["salir"])){
+    /* if(isset($_POST["salir"])){
         cerrarSesion();
-    }
+    } */
 
     echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema2-Cookies_Sesiones/Sesiones/Ejemplos/EjemploSesiones.php\"><button>Ver Código</button></a></br>";
 
