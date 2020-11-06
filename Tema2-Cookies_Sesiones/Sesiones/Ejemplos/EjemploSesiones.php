@@ -1,7 +1,5 @@
 <?php
     
-    include "funciones.php";
-
     session_start();
 
     //echo session_id(); muestra un id que debe ser igual en la otra página.
