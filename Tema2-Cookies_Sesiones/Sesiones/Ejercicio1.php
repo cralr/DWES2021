@@ -9,7 +9,6 @@
 * 
 * @author Rafael Miguel Cruz Álvarez
 */
-include "funciones.php";
 
 session_start();
 
