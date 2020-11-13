@@ -83,7 +83,7 @@ function limpiarDatos($limpiar){
     <section>
         <?php
 
-            echo "<h1>Agenda de Contactos</h1>";
+            echo "<h1>Gestión Notas Alumnos</h1>";
             echo "<form action=\"".htmlspecialchars($_SERVER['PHP_SELF'])."\" method=\"post\">";
                 echo "<label><p>Nombre Alumno: </p><input type=\"text\" name=\"nombre\" value=\"$vAlumno\"></input></label>";
                 if (empty($_POST["nombre"]))
