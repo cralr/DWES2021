@@ -130,7 +130,7 @@
             control();
 
             echo "</br><a href=\"../../../index.php?page=dwes\"><button>Volver</button></a></br>";
-            echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema2-Cookies_Sesiones/Sesiones/Ejercicio1.php\"><button>Ver Código</button></a></br>";
+            echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema2-Cookies_Sesiones/Sesiones/Ejercicio2.php\"><button>Ver Código</button></a></br>";
 
         ?>
     </section>  
