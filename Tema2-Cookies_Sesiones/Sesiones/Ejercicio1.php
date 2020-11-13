@@ -18,7 +18,7 @@ if (!isset($_SESSION["agenda"])){
 
 function controlIsset(){
     if(isset($_POST["nuevoContacto"])){
-        echo "<form action=\"Ejercicio1.php\" method=\"post\">";
+        echo "<form action=\"".htmlspecialchars($_SERVER['PHP_SELF'])."\" method=\"post\">";
             echo "<label><p>Nombre: </p><input type=\"text\" name=\"nombre\" value=\"\"></input></label></br>";
             echo "<label><p>Teléfono: </p><input type=\"text\" name=\"telefono\" value=\"\"></input></label></br>";
             echo "</br></br><input type=\"submit\" name=\"annadirContacto\" value=\"Añadir Contacto\" ></button>";
@@ -27,7 +27,7 @@ function controlIsset(){
     
     if(isset($_POST["annadirContacto"])){
         $arrayContacto = array("nombre" => $_POST["nombre"], "telefono" => $_POST["telefono"]);
-        array_push($_SESSION["agenda"],$arrayContacto);
+        array_push($_SESSION["agenda"],$arrayContacto);////$_SESSION["agenda"][]
         echo "Se ha añadido un nuevo contacto.";
     }
 
@@ -67,7 +67,7 @@ function controlIsset(){
         <?php
 
             echo "<h1>Agenda de Contactos</h1>";
-            echo "<form action=\"Ejercicio1.php\" method=\"post\">";
+            echo "<form action=\"".htmlspecialchars($_SERVER['PHP_SELF'])."\" method=\"post\">";
                 //echo "<label><p>Buscar: </p><input type=\"text\" name=\"buscar\" value=\"\"></input></label></br>";
                 echo "</br></br><input type=\"submit\" name=\"nuevoContacto\" value=\"Nuevo Contacto\" ></button>";
                 echo "  <input type=\"submit\" name=\"mostrar\" value=\"Mostrar Contactos\" ></button>";
@@ -80,13 +80,6 @@ function controlIsset(){
             echo "</br><a href=\"../../../index.php?page=dwes\"><button>Volver</button></a></br>";
             echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema2-Cookies_Sesiones/Sesiones/Ejercicio1.php\"><button>Ver Código</button></a></br>";
 
-        
-
-
-
-
-
-           
         ?>
     </section>  
 </body>
