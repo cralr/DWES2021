@@ -5,7 +5,7 @@
 
     session_start();
 
-    $lProcesarFormulario;
+    $lProcesarFormulario=false;
     $vFecha = "";
     $vTarea = "";
     $msgErrorFecha="";

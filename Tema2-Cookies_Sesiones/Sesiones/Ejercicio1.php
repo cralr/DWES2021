@@ -12,7 +12,7 @@
 
 session_start();
 
-$lProcesarFormulario;
+$lProcesarFormulario=false;
 $vNombre = "";
 $vTelefono = "";
 $msgErrorNombre="";
@@ -92,7 +92,7 @@ function limpiarDatos($limpiar){
                         echo "</br>";
                     }
                 echo "</br></br><input type=\"submit\" name=\"annadirContacto\" value=\"Añadir Contacto\" ></button>";
-                echo "  <input type=\"submit\" name=\"mostrar\" value=\"Mostrar Contactos\" ></button>";
+                echo "  <input type=\"submit\" name=\"mostrarContacto\" value=\"Mostrar Contactos\" ></button>";
             echo "</form>";
 
             if($lProcesarFormulario == true){
@@ -104,7 +104,7 @@ function limpiarDatos($limpiar){
             }
             
             if($lProcesarFormulario == false){
-                if(isset($_POST["mostrar"])){
+                if(isset($_POST["mostrarContacto"])){
                     echo "<table border=1>";
                     echo "<tr><th>Nombre</th><th>Teléfono</th></tr>";
                     foreach($_SESSION["agenda"] as $valor){
@@ -114,7 +114,6 @@ function limpiarDatos($limpiar){
                     }
                     echo "</table>";
                 }
-                
             }
 
             echo "<form action=\"".htmlspecialchars($_SERVER['PHP_SELF'])."\" method=\"post\">";

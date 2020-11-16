@@ -9,7 +9,7 @@
 
 session_start();
 
-$lProcesarFormulario;
+$lProcesarFormulario=false;
 $vAlumno = "";
 $vTrimestre = "";
 $vNota = "";
