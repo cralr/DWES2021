@@ -66,7 +66,7 @@
     <section>
         <?php
             echo "<form action=\"formulario.php\" method=\"post\">";
-                echo "<label><p>Fecha: </p><input type=\"text\" name=\"fecha\" value=\"\"></input></label>";
+                echo "<label><p>Fecha: </p><input type=\"text\" name=\"fecha\" value=\"\" placeholder=\" \"></input></label>";
                 if (empty($_POST["fecha"]))
                         echo $msgErrorFecha."</br>";
                     else{
