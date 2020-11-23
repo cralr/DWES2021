@@ -1,10 +1,13 @@
 <?php
 
 /**
- * Formulario ficheros
+ * Formulario ficheros para añadir una imagen y luego mostrar todas las imagenes
+ * 
+ * 
+ * @author Rafael Miguel Cruz Álvarez
  */
 if (isset($_POST["enviar"])) {
-    print_r($_FILES);
+    //print_r($_FILES);
     echo "<br>";
     $allowedExts = array("gif", "jpeg", "jpg", "png", "PNG");
     $temp = explode(".", $_FILES["file"]["name"]);
@@ -21,13 +24,13 @@ if (isset($_POST["enviar"])) {
         if ($_FILES["file"]["error"] > 0) {
             echo "Error: " . $_FILES["file"]["error"] . "<br/>";
         } else {
-            echo "Upload: " . $_FILES["file"]["name"] . "<br>";
+           /*  echo "Upload: " . $_FILES["file"]["name"] . "<br>";
             echo "Type: " . $_FILES["file"]["type"] . "<br>";
             echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-            echo "Stored in: " . $_FILES["file"]["tmp_name"];
+            echo "Stored in: " . $_FILES["file"]["tmp_name"]; */
 
             if (file_exists("upload/" . $_FILES["file"]["name"])) {
-                echo $_FILES["file"]["name"] . " already exists. ";
+                echo $_FILES["file"]["name"] . " ya existe. ";
             } else {
                 move_uploaded_file(
                     $_FILES["file"]["tmp_name"],
@@ -71,9 +74,13 @@ if (isset($_POST["enviar"])) {
 
         echo "<h3>Imagenes Guardadas</h3>";
         $imagenes = scandir("upload");
-        for($i=0;$i<count($imagenes);$i++)
-            if((strpos($imagenes[$i],"png") !== false) || (strpos($imagenes[$i],"jpeg") !== false) || (strpos($imagenes[$i],"jpg") !== false) || (strpos($imagenes[$i],"gif") !== false))
-                echo "<img src=\"upload/".$imagenes[$i]."\" width=\"300px\"><br>";
+        echo "<table border=\"1px solid black\">";
+        for($i=0;$i<count($imagenes);$i++){
+            if((strpos($imagenes[$i],"png") !== false) || (strpos($imagenes[$i],"jpeg") !== false) || (strpos($imagenes[$i],"jpg") !== false) || (strpos($imagenes[$i],"gif") !== false)){
+                echo "<td><img src=\"upload/".$imagenes[$i]."\" width=\"300px\"><br></td>";
+            }  
+        }
+        echo "</table>";
     ?>
 
 </body>
