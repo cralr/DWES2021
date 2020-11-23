@@ -64,11 +64,15 @@ if (isset($_POST["enviar"])) {
         <input type="submit" name="enviar" value="Enviar"></br>
     </form>
 
+
     <?php
+
+        echo "</br><a href=\"https://github.com/cralr/DWES2021/blob/master/Tema3-Ficheros/Ejemplos/formulario_ficheros.php\"><button>Ver Código</button></a></br>";
+
         echo "<h3>Imagenes Guardadas</h3>";
         $imagenes = scandir("upload");
         for($i=0;$i<count($imagenes);$i++)
-            if((strpos($imagenes[$i],"jpg") !== false) || (strpos($imagenes[$i],"jpeg") !== false) || (strpos($imagenes[$i],"png") !== false))
+            if((strpos($imagenes[$i],"png") !== false) || (strpos($imagenes[$i],"jpeg") !== false) || (strpos($imagenes[$i],"jpg") !== false) || (strpos($imagenes[$i],"gif") !== false))
                 echo "<img src=\"upload/".$imagenes[$i]."\" width=\"300px\"><br>";
     ?>
 
