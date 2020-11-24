@@ -29,7 +29,8 @@
     <meta charset="UTF-8">
     <meta name="author" content="Rafael Miguel Cruz Álvarez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="/PaginaInicio/css/style.css">
+    <link rel="stylesheet" href="/PaginaInicio/css/normalize.css">
     <title>Ejercicio 2</title>
 </head>
 <body>
